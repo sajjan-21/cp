@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 
+#define all(p) p.begin(),p.end()
 using namespace std;
 typedef vector <int> vi;
 typedef pair<int, int> pi;
@@ -10,6 +11,18 @@ typedef unsigned long long ull;
 #define nl "\n"
 #define pb push_back
 #define fio ios_base::sync_with_stdio(false); cout.tie(NULL); cin.tie(NULL);
+
+#ifndef ONLINE_JUDGE
+    #define dbg(x)   cout << "[dbg] " << #x << " = " << (x) << nl
+    #define dbg2(x,y) cout << "[dbg] " << #x << " = " << (x) \
+                           << "  |  " << #y << " = " << (y) << nl
+    #define dbgv(v)  cout << "[dbg] " << #v << " = "; \
+                     for (auto& _e : (v)) cout << _e << " "; cout << nl
+#else
+    #define dbg(x)
+    #define dbg2(x,y)
+    #define dbgv(v)
+#endif
 
 void init_code()
 {
@@ -24,11 +37,7 @@ ll ipow(int base, int exp){
     while(exp--) result *= base;
     return result;
 }
-
-void solve()
-{
-
-}
+void solve();
 
 int main()
 {
@@ -37,4 +46,9 @@ int main()
     cin>>t;
     while (t--)
         solve();
+}
+
+void solve()
+{
+
 }
